@@ -1,0 +1,168 @@
+<!DOCTYPE html5>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=no">
+		<!--Titulo do Site-->
+		<title>Museu Nacional</title>
+		<!-- CSS Bootstrap 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+		<!-- fontes de um site (fontawesome) -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- fonte do site google fonts -->
+		<!-- <link href="https://fonts.googleapis.com/..." rel="stylesheet"> -->
+		<!-- Mormalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- Meu CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+	</head>
+	
+	<body id='container'>
+		<header>
+			<!-- Elementos da Barra Superior-->
+			<div id='logo' class='ref'>
+				<a  href="#" alt='Museu Nacional'></a>
+			</div>
+			<!-- NavBar -->
+			<nav>
+				<ul >
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Exposição</a></li>
+					<li><a href="#">Pesquisa</a></li>
+					<li><a href="#">Acervo</a></li>
+					<li><a href="#">Vídeos</a></li>
+					<li><a href="#">Fotos</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- main -->
+		<main id='principal'> 
+			<div id='conteudo'>
+				<section id='capa'>
+					<img src="imgs/museu.png" alt="interior de um predio com diversos arcos todo o predio em tijolos e esturtara de metais">
+				</section>
+
+				<section id='posts'>
+
+					<!-- Video -->
+					<article id='video'>
+						<h3>Conheça o museu</h3>
+						<iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</article>	
+
+					<!-- Mapa -->
+					<article id='mapa'>
+						<h3>Mapa para o museu</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1713513393715!2d-43.2285058371867!3d-22.9070498436345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1585519212911!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</article>		
+
+					<article id='expo'>
+						<h3>Exposições</h3>
+						<ul>
+							<li>
+								<a href="#">Os assutadores insetos</a>
+							</li>
+							<li>
+								<a href="#">O crânio de Luiza, a mulher mais antiga do Brasil</a>
+							</li>
+							<li>
+								<a href="#">Preguiça gigante e trige-dentes-de-sabre</a>
+							</li>
+							<li>
+								<a href="#">Plantas do Brasil Central</a>
+							</li>
+							<li>
+								<a href="#">Teresa Cristina: A Imperatriz Arqueóloga</a>
+							</li>	
+							<li>
+								<a href="#">Arte com Dinossauros - Paleoarte</a>
+							</li>
+							<li>
+								<a href="#"><strong>Veja todos:</strong></a>
+							</li>						
+						</ul>	
+					</article>	
+
+					<article id='hist'>
+						<h3>200 anos de história</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<a href="#"><strong>Leia Mais</strong></a>
+					</article>
+				</section>
+			</div>
+
+			<aside>
+				<section id='dep'>
+					<img src="imgs/depoimento.png" alt='Museu Nacional criado em 1922, é um dos mais importantes museus do Brasil, reuníndo um acervo de mais de 250.000 itens. Direção do Museu'>
+				</section>
+
+				<section id='visita'>
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<label for='data'>Data:</label>
+							<input class='campo' type="text" id="data" value="dd/mm/aaaa">
+							<label for='pessoa'>Qtd pessoas:</label>
+							<input class='campo' style="width:30px;" type="text" id="pessoa" value="1">
+						</fieldset>
+
+						<input class='botao' type="submit" value="Verifiar a disponibilidade">
+					</form>
+				</section>
+
+				<section id='galeria'>
+					<h4>Galeria de Fotos</h4>
+					<a href="">
+						<img src="imgs/imagem1.jpg" height="93" width="93" alt='imagem do acervo do museu'>
+					</a>
+					<a href="">
+						<img src="imgs/imagem2.jpg" height="93" width="93" alt='imagem do acervo do museu'>
+					</a>
+					<a href="">
+						<img src="imgs/imagem3.jpg" height="93" width="93" alt='imagem do acervo do museu'>
+					</a>
+					<a href="">
+						<img src="imgs/imagem4.jpg" height="93" width="93" alt='imagem do acervo do museu'>
+					</a>
+				</section>
+			</aside>
+		</main>		
+
+		<!-- footer -->
+		<footer>
+			<p>
+				<a href="#">Home</a>
+				<a href="#">Exposição</a>
+				<a href="#">Pesquisa</a>
+				<a href="#">Acervo</a>
+				<a href="#">Vídeos</a>
+				<a href="#">Fotos</a>
+				<a href="#">Contato</a>
+			</p>
+			<p>
+				2020 <a href="#"> Museu Nacional</a> Todos Diretos Reservados.
+			</p>
+		</footer>
+
+		<!-- Javascript JQuey 3.3.1-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- Javascript Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- Meu javascript -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
